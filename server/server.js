@@ -2,6 +2,8 @@ const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
 const authRoutes = require("./routes/authroutes");
+console.log("Product Routes Loaded");
+const productRoutes = require("./routes/productroutes");
 require("dotenv").config();
 
 const app = express();
@@ -9,6 +11,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use("/api/auth", authRoutes);
+app.use("/api/products", productRoutes);
 
 // MongoDB Connection
 mongoose
