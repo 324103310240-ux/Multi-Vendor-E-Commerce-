@@ -1,0 +1,154 @@
+.cart-container{
+    max-width:1200px;
+    margin:40px auto;
+    padding:20px;
+}
+
+.cart-title{
+    text-align:center;
+    color:#1f2937;
+    margin-bottom:35px;
+    font-size:38px;
+}
+
+.cart-list{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.cart-item{
+    background:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 8px 18px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.cart-item:hover{
+    transform:translateY(-4px);
+}
+
+.cart-image{
+    width:90px;
+    height:90px;
+    background:#dbeafe;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:40px;
+}
+
+.cart-details{
+    flex:1;
+    margin-left:25px;
+}
+
+.cart-details h2{
+    color:#111827;
+    margin-bottom:10px;
+}
+
+.cart-details p{
+    color:#6b7280;
+    margin:5px 0;
+}
+
+.remove-btn{
+    background:#dc2626;
+    color:white;
+    border:none;
+    padding:12px 18px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.remove-btn:hover{
+    background:#b91c1c;
+}
+
+.cart-summary{
+    margin-top:35px;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 8px 18px rgba(0,0,0,.12);
+}
+
+.cart-summary h2{
+    margin-bottom:20px;
+    color:#111827;
+}
+
+.summary-row{
+    display:flex;
+    justify-content:space-between;
+    margin:12px 0;
+    font-size:17px;
+}
+
+.total-row{
+    font-size:22px;
+    font-weight:bold;
+    color:#16a34a;
+    border-top:1px solid #ddd;
+    padding-top:15px;
+}
+
+.checkout-btn{
+    width:100%;
+    margin-top:25px;
+    padding:14px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.checkout-btn:hover{
+    background:#1d4ed8;
+}
+
+.empty-cart{
+    text-align:center;
+    padding:80px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 8px 18px rgba(0,0,0,.12);
+}
+
+.continue-btn{
+    margin-top:20px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:14px 25px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.continue-btn:hover{
+    background:#1d4ed8;
+}
+
+@media(max-width:768px){
+
+.cart-item{
+    flex-direction:column;
+    text-align:center;
+    gap:20px;
+}
+
+.cart-details{
+    margin-left:0;
+}
+
+}
